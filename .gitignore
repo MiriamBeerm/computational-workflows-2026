@@ -1,0 +1,44 @@
+# Nextflow temporary and cache files
+work/
+.nextflow/
+.nextflow.log*
+
+# Large sequencing raw data files
+*.bam
+*.fastq.gz
+*.fq.gz
+*.fastq
+*.fq
+
+# Reference data
+*.gtf
+*.gff
+*.fa
+*.fasta
+*.fa.gz
+*.tar
+
+# Large data output folders
+fetchngs_out/
+
+# Zip archives and standalone software tools
+*.zip
+*.tar.gz
+*.tgz
+*.gz
+fastqc*/
+
+# Python and Jupyter Notebook caches
+__pycache__/
+.ipynb_checkpoints/
+
+# System and editor settings
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Nextflow output
+results/
+
+# PowerPoint lock files
+~$*

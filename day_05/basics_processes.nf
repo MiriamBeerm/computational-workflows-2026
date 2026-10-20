@@ -4,6 +4,11 @@ params.zip = 'zip'
 
 process SAYHELLO {
     debug true
+
+    script:
+    """
+    echo 'Hello World!'
+    """
 }
 
 
@@ -11,17 +16,17 @@ process SAYHELLO {
 workflow {
 
     // Task 1 - create a process that says Hello World! (add debug true to the process right after initializing to be sable to print the output to the console)
-    if (params.step == 1) {
+    if (params.step.toInteger() == 1) {
         SAYHELLO()
     }
 
     // Task 2 - create a process that says Hello World! using Python
-    if (params.step == 2) {
+    if (params.step == '2') {
         SAYHELLO_PYTHON()
     }
 
     // Task 3 - create a process that reads in the string "Hello world!" from a channel and write it to command line
-    if (params.step == 3) {
+    if (params.step == '3') {
         greeting_ch = Channel.of("Hello world!")
         SAYHELLO_PARAM(greeting_ch)
     }
