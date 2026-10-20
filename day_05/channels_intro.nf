@@ -1,4 +1,6 @@
-params.step = 0
+params {
+    step: Integer = 0
+}
 
 
 workflow{
@@ -14,7 +16,7 @@ workflow{
     }
 
     // Value channel
-    if (params.step == 00) {
+    if (params.step == 0) {
         out_ch = channel.value(1)
     }
 
