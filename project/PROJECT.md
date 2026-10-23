@@ -1,8 +1,8 @@
 # Fill out your Project Information
 
-Student1: Laurens Hahn
+Student1: Laurens Hahn (GitHub-ID: SaveTheWhaIes)
 
-Student2: Miriam Beermann
+Student2: Miriam Beermann (GitHub-ID: MiriamBeerm)
 
 Project Github url: (https://github.com/SaveTheWhaIes/cwbd-project) 
 
