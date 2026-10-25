@@ -39,6 +39,7 @@ Thumbs.db
 
 # Nextflow output
 results/
+rnaseq_out/
 
 # PowerPoint lock files
 ~$*
